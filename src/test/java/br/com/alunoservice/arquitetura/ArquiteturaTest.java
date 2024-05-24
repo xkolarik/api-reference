@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@AnalyzeClasses(packages = "br.com.felixgilioli.alunoservice")
+@AnalyzeClasses(packages = "br.com.alunoservice")
 public class ArquiteturaTest {
 
     @ArchTest

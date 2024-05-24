@@ -34,9 +34,9 @@ class AlunoServiceTest {
     void salvarQuandoJaExisteUmAlunoCadastrado() {
         var aluno = new Aluno();
         aluno.setId(1L);
-        aluno.setNomeCompleto("Felix Gilioli");
+        aluno.setNomeCompleto("kolarik ");
         aluno.setSexo(Sexo.M);
-        aluno.setEmail("felix@email.com");
+        aluno.setEmail("kolarik@email.com");
 
         when(alunoRepository.existsByEmail(aluno.getEmail())).thenReturn(true);
 
@@ -51,9 +51,9 @@ class AlunoServiceTest {
     void salvarComSucesso() {
         var aluno = new Aluno();
         aluno.setId(1L);
-        aluno.setNomeCompleto("Felix Gilioli");
+        aluno.setNomeCompleto("kolarik");
         aluno.setSexo(Sexo.M);
-        aluno.setEmail("felix@email.com");
+        aluno.setEmail("kolarik@email.com");
 
         when(alunoRepository.existsByEmail(aluno.getEmail())).thenReturn(false);
         when(alunoRepository.save(aluno)).thenReturn(aluno);
